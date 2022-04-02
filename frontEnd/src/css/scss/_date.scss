@@ -1,0 +1,24 @@
+.dx-texteditor.dx-editor-outlined {
+    width: auto !important;
+}
+.timeContent {
+    margin-top: .5rem;
+    .time_Box {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: .5rem;
+        .time_title {
+            margin: auto 0.5rem auto 0;
+        }
+    }
+}
+@media (min-width: 768px) {
+    .timeContent {
+        display: flex;
+        .time_Box {
+            width: auto;
+            margin: auto;
+            margin-right: 0.5rem;
+        }
+    }
+}

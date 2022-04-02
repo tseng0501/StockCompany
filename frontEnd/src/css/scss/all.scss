@@ -1,0 +1,18 @@
+//引入scss變數
+@import 'variables';
+
+//引入fontawesome樣式
+@import '../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@import '../../../node_modules/@fortawesome/fontawesome-free/scss/solid';
+@import '../../../node_modules/@fortawesome/fontawesome-free/scss/regular';
+@import '../../../node_modules/@fortawesome/fontawesome-free/scss/brands';
+
+@import 'panel';
+@import 'navbar';
+@import 'date';
+@import 'inventoryList';
+@import 'shipmentHistorySearch';
+@import 'shipmentManagement';
+@import 'monthlyBill';
+
+

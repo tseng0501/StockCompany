@@ -1,0 +1,70 @@
+#InventoryList {
+    width: 100%;
+    #InventoryListFilter {
+        padding: 0.5rem;
+        .input-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+        .input-group-name {
+            display: flex;
+            .input-title {
+                width: 15%;
+                margin: auto;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    #InventoryList {
+        width: 100%;
+        #InventoryListFilter {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .input-group {
+                width: calc(95% / 2);
+                margin-right: 0.5rem;
+                .input-group-textselect{
+                    margin: auto;
+                }
+            }
+            .input-group-name {
+                display: flex;
+                .input-title {
+                    width: 20%;
+                }
+                .InventoryList_number {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    #InventoryList {
+        #InventoryListFilter {
+            flex-wrap: nowrap;
+            .input-group {
+                width: calc(96% / 4);
+                margin-right: 0.5rem;
+                .input-group-textselect{
+                    width: 30%;
+                }
+            }
+            .input-group-name {
+                display: flex;
+                .input-title {
+                    width: 20%;
+                }
+                .InventoryList_number {
+                    width: 100%;
+                    margin-right: .5rem;
+                }
+            }
+        }
+    }
+}

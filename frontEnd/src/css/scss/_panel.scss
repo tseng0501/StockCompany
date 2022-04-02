@@ -1,0 +1,76 @@
+body {
+    width: 100%;
+    height: 100%;
+    // 圖片滿版
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+* {
+    list-style: none;
+}
+.dx-datagrid {
+     background-color: transparent; 
+}
+.dx-toolbar {
+    background-color: transparent; 
+}
+.dx-editor-cell .dx-texteditor .dx-texteditor-input{
+    background: transparent!important;
+}
+.dx-datagrid-content .dx-datagrid-table .dx-row .dx-editor-cell .dx-texteditor{
+    background: transparent!important;
+}
+// 下拉選單
+.dx-texteditor.dx-editor-outlined{
+    background: transparent;
+}
+// 輸入框
+input{
+    background: transparent;
+}
+.form-control {
+    background: transparent;
+}
+.dx-texteditor-container{
+    border: #61d2b4 solid 1px;
+}
+.dx-texteditor-input{
+    background: transparent;
+}
+// 新增按鈕
+.dx-button-mode-contained{
+    background: transparent;
+}
+//月帳單的tab
+.dx-tab{
+    background: transparent;
+}
+    
+#gridContainer {
+    padding: 0.5rem;
+}
+
+//table pagging
+.dx-pager .dx-pages {
+    display: flex;
+    .dx-info{
+        margin: auto;
+        margin-right: .5rem;
+        font-size: 1rem;
+    }
+}
+@media (min-width: 768px) {
+    #Header .navbar-nav .navbar-nav__meun {
+        right: 1rem;
+    }
+    .dx-field-value:not(.dx-switch):not(.dx-checkbox):not(.dx-button) {
+        width: 74%;
+    }
+}
+@media (min-width: 992px) {
+    .dx-field-value:not(.dx-switch):not(.dx-checkbox):not(.dx-button) {
+        width: 64%;
+    }
+}

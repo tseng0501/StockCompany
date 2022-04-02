@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "text": "帳號管理",
+        "mode": "AccountManagement",
+        "enable": true
+    },
+    {
+        "id": "2",
+        "text": "客戶清單",
+        "mode": "CustomerList",
+        "enable": true
+    },
+    {
+        "id": "3",
+        "text": "庫存清單",
+        "mode": "InventoryList",
+        "enable": true
+    },
+    {
+        "id": "4",
+        "text": "出貨管理",
+        "mode": "ShipmentManagement",
+        "enable": true
+    },
+    {
+        "id": "5",
+        "text": "出貨歷史查詢",
+        "mode": "ShipmentHistorySearch",
+        "enable": true
+    }
+]

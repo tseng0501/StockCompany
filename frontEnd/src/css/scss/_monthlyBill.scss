@@ -1,0 +1,36 @@
+#MonthlyBill {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    #tabs {
+        .dx-fieldset {
+            text-align: center;
+            #content {
+                margin-bottom: 1rem;
+                .input-group {
+                    margin-bottom: 0.5rem;
+                    .input-group-textselect {
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+    #gridContainer{
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    #MonthlyBill {
+        display: flex;
+        justify-content: center;
+        #tabs {
+            width: 50%;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+}

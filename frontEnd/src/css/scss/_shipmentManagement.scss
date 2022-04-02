@@ -1,0 +1,23 @@
+#ShipmentManagement{
+    padding: .5rem;
+}
+.button-group{
+    margin-top: 1rem;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    #ShipmentManagement{
+        display: flex;
+        flex-wrap: wrap;
+        .dx-field{
+            width: 100%;
+            margin-right: 1rem;
+            .dx-field-label{
+                width: auto;
+            }
+        }
+        .dx-field-value:not(.dx-switch):not(.dx-checkbox):not(.dx-button){
+            width: 77%;
+        }
+    }
+}
