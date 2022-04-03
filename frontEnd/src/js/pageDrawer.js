@@ -44,41 +44,53 @@ Page.pageDrawer.draw = function (r,user) {
             Page.pageDrawer.resetMainContentHtml();
             Page.pageDrawer.currentPage(data)
             const mode = data.itemData.mode;
-            
-            switch (mode) {
-                case 'AccountManagement':
-                    Page.accountManagement.draw(mode,config);
-                    break;
-                case 'CustomerList':
-                    Page.customerList.draw(mode,config);
-                    break;
-                case 'InventoryList':
-                    Page.inventoryList.draw(mode,config)
-                    break;
-                case 'ShipmentManagement':
-                    Page.shipmentManagement.draw(mode,config)
-                    break;
-                case 'ShipmentHistorySearch':
-                    Page.shipmentHistorySearch.draw(mode,config)
-                    break;
-                default:
-            }
+            Page.pageDrawer.swicthPage(mode, config)
             Page.pageDrawer.oldId = data.itemData.mode
         }
     }).dxMenu("instance");
-    let firstMode = newData[0].mode;
-    if(user =="view"){
-        Page.customerList.draw("CustomerList",config)
+    Page.pageDrawer.frontPage(newData,config)
+}
+Page.pageDrawer.frontPage = function(newData,config) {
+    let first_mode = newData[0].mode;
 
-    }else{
-        Page.accountManagement.draw(firstMode,config)
+    Page.pageDrawer.swicthPage(first_mode, config)
+        //第一個導覽列標籤(白底黑字)
+    $('#Menu > div > ul > li:nth-child(1)').find('.dx-menu-item').css('background-color', 'transparent');
+    $('#Menu > div > ul > li:nth-child(1)').find('.dx-menu-item').css('color', 'black');
+    $('#Menu > div > ul > li:nth-child(1)').css('background-color', '#6ec5bd');
+    $('#Menu > div > ul > li:nth-child(1)').css('color', 'black');
+    $('#Menu > div > ul > li:nth-child(1)').css('border-radius', '.5rem');
+}
+Page.pageDrawer.swicthPage = function(mode,config) {
+    switch (mode) {
+        case 'AccountManagement':
+            Page.accountManagement.draw(mode,config);
+            break;
+        case 'CustomerList':
+            Page.customerList.draw(mode,config);
+            break;
+        case 'InventoryList':
+            Page.inventoryList.draw(mode,config)
+            break;
+        case 'ShipmentManagement':
+            Page.shipmentManagement.draw(mode,config)
+            break;
+        case 'ShipmentHistorySearch':
+            Page.shipmentHistorySearch.draw(mode,config)
+            break;
+        default:
     }
 }
 Page.pageDrawer.currentPage = function (data) {
-    //當前頁面
-    data.element.find('.dx-menu-item').css('background-color', 'transparent');  
-    data.itemElement.closest('.dx-menu-item').css('background-color', 'cornsilk');  
-    data.itemElement.closest('.dx-menu-item').css('border-radius', '.5rem'); 
+     //當前頁面 - 導覽列標籤(顔色，背景)
+     $('#Menu > div > ul > li:nth-child(1)').css('background-color', 'transparent');
+     $('#Menu > div > ul > li:nth-child(1)').css('color', 'black');
+     //當前頁面
+     data.element.find('.dx-menu-item').css('background-color', 'transparent');
+     data.element.find('.dx-menu-item').css('color', 'black');
+     data.itemElement.closest('.dx-menu-item').css('background-color', '#6ec5bd');
+     data.itemElement.closest('.dx-menu-item').css('color', 'black');
+     data.itemElement.closest('.dx-menu-item').css('border-radius', '.5rem');
 }
 Page.pageDrawer.resetMainContentHtml = function () {
     Page.clear();
