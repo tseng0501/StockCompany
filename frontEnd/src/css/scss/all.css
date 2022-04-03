@@ -10389,10 +10389,6 @@ input {
   background: transparent;
 }
 
-.dx-texteditor-container {
-  border: #61d2b4 solid 1px;
-}
-
 .dx-texteditor-input {
   background: transparent;
 }
@@ -10793,52 +10789,6 @@ input {
   }
   #ShipmentManagement .dx-field-value:not(.dx-switch):not(.dx-checkbox):not(.dx-button) {
     width: 77%;
-  }
-}
-
-#MonthlyBill {
-  margin-top: 0.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#MonthlyBill #tabs .dx-fieldset {
-  text-align: center;
-}
-
-#MonthlyBill #tabs .dx-fieldset #content {
-  margin-bottom: 1rem;
-}
-
-#MonthlyBill #tabs .dx-fieldset #content .input-group {
-  margin-bottom: 0.5rem;
-}
-
-#MonthlyBill #tabs .dx-fieldset #content .input-group .input-group-textselect {
-  margin: auto;
-}
-
-#MonthlyBill #gridContainer {
-  width: 100%;
-}
-
-@media (min-width: 768px) {
-  #MonthlyBill {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  #MonthlyBill #tabs {
-    width: 50%;
   }
 }
 /*# sourceMappingURL=all.css.map */

@@ -4,5 +4,9 @@
         "port": 8900
     },
     "projectTitle": "Stock Company",
-    "ifRemoveCheckToken": true
+    "ifRemoveCheckToken": true,
+    "proxy": {
+        "ip": "192.168.168.13",
+        "port": 3500
+    }
 }
